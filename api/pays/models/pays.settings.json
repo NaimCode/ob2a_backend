@@ -1,0 +1,35 @@
+{
+  "kind": "collectionType",
+  "collectionName": "pays",
+  "info": {
+    "name": "Pays"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "nom": {
+      "type": "string"
+    },
+    "monnaie": {
+      "type": "enumeration",
+      "enum": [
+        "Euro",
+        "Dollar",
+        "FCFA"
+      ]
+    },
+    "tempsNecessaire": {
+      "type": "text"
+    },
+    "livraisonChezSoi": {
+      "type": "boolean"
+    },
+    "TVA": {
+      "type": "decimal"
+    }
+  }
+}

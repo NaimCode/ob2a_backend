@@ -1,0 +1,28 @@
+{
+  "collectionName": "components_utilisateur_adresses",
+  "info": {
+    "name": "Adresse",
+    "icon": "address-card"
+  },
+  "options": {},
+  "attributes": {
+    "pays": {
+      "type": "string"
+    },
+    "region": {
+      "type": "string"
+    },
+    "ville": {
+      "type": "string"
+    },
+    "adresse1": {
+      "type": "text"
+    },
+    "adresse2": {
+      "type": "text"
+    },
+    "codePostal": {
+      "type": "integer"
+    }
+  }
+}

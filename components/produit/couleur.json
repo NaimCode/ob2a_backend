@@ -1,0 +1,25 @@
+{
+  "collectionName": "components_produit_couleurs",
+  "info": {
+    "name": "Couleur",
+    "icon": "fill-drip"
+  },
+  "options": {},
+  "attributes": {
+    "couleur": {
+      "type": "enumeration",
+      "enum": [
+        "Rouge",
+        "Bleu",
+        "Noir",
+        "Blanc",
+        "Vert",
+        "Violet",
+        "Orange",
+        "Gris",
+        "Jaune",
+        "Rose"
+      ]
+    }
+  }
+}

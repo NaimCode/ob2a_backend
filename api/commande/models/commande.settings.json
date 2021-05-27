@@ -1,0 +1,41 @@
+{
+  "kind": "collectionType",
+  "collectionName": "commandes",
+  "info": {
+    "name": "Commande",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "acheteur": {
+      "via": "commandes",
+      "plugin": "users-permissions",
+      "model": "user"
+    },
+    "produit": {
+      "via": "commandes",
+      "model": "produit"
+    },
+    "etat": {
+      "type": "enumeration",
+      "enum": [
+        "commande",
+        "traitement",
+        "envoye",
+        "recu"
+      ]
+    },
+    "paiement": {
+      "type": "enumeration",
+      "enum": [
+        "Paye",
+        "NonPaye"
+      ]
+    }
+  }
+}

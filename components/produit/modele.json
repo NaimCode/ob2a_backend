@@ -1,0 +1,16 @@
+{
+  "collectionName": "components_produit_modeles",
+  "info": {
+    "name": "Modèle",
+    "icon": "clipboard-list"
+  },
+  "options": {},
+  "attributes": {
+    "titre": {
+      "type": "string"
+    },
+    "prix": {
+      "type": "decimal"
+    }
+  }
+}

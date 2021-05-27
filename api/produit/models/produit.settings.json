@@ -1,0 +1,103 @@
+{
+  "kind": "collectionType",
+  "collectionName": "produits",
+  "info": {
+    "name": "Produit",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "titre": {
+      "type": "string"
+    },
+    "contenu": {
+      "type": "richtext"
+    },
+    "description": {
+      "type": "text"
+    },
+    "meta_description": {
+      "type": "string"
+    },
+    "prix": {
+      "type": "decimal"
+    },
+    "stock": {
+      "type": "integer"
+    },
+    "note": {
+      "type": "decimal"
+    },
+    "collections": {
+      "via": "produits",
+      "collection": "collection",
+      "dominant": true
+    },
+    "image": {
+      "collection": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false,
+      "pluginOptions": {}
+    },
+    "slug": {
+      "type": "uid",
+      "targetField": "titre"
+    },
+    "categories": {
+      "via": "produits",
+      "collection": "categorie"
+    },
+    "vendeur": {
+      "via": "produitsAjoutes",
+      "plugin": "users-permissions",
+      "model": "user"
+    },
+    "commandes": {
+      "via": "produit",
+      "collection": "commande"
+    },
+    "enPromotion": {
+      "type": "boolean"
+    },
+    "prixPromotion": {
+      "type": "decimal"
+    },
+    "prixLivraison": {
+      "type": "decimal"
+    },
+    "tag": {
+      "type": "component",
+      "repeatable": true,
+      "component": "produit.tag"
+    },
+    "taille": {
+      "type": "string"
+    },
+    "couleur": {
+      "type": "enumeration",
+      "enum": [
+        "Rouge",
+        "Bleu",
+        "Noir",
+        "Blanc",
+        "Vert",
+        "Violet",
+        "Orange",
+        "Gris",
+        "Jaune",
+        "Rose"
+      ]
+    }
+  }
+}

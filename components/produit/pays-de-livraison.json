@@ -1,0 +1,16 @@
+{
+  "collectionName": "components_livraison_pays_de_livraisons",
+  "info": {
+    "name": "Pays de Livraison",
+    "icon": "shipping-fast"
+  },
+  "options": {},
+  "attributes": {
+    "pays": {
+      "model": "pays"
+    },
+    "prix": {
+      "type": "decimal"
+    }
+  }
+}
