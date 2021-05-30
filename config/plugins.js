@@ -32,7 +32,7 @@ module.exports = {
               if (err) {
                 reject(err);
               }
-              file.url = `https://storage.googleapis.com/${config.bucket}/${filename}`;
+              file.url = `https://storage.googleapis.com/${bucket}/${filename}`;
               resolve();
             }
           );
