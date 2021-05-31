@@ -26,7 +26,6 @@
     "strapi-plugin-upload": "3.6.2",
     "strapi-plugin-users-permissions": "3.6.2",
     "strapi-provider-upload-aws-s3": "^3.6.2",
-    "strapi-provider-upload-to-firebase": "^1.0.1",
     "strapi-utils": "3.6.2"
   },
   "author": {
