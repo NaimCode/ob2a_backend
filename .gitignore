@@ -105,7 +105,8 @@ coverage
 ############################
 # Strapi
 ############################
-
+package-lock.json
+./public
 .env
 license.txt
 exports
@@ -113,4 +114,3 @@ exports
 build
 .strapi-updater.json
 
-package-lock.json
