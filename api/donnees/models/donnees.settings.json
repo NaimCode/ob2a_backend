@@ -1,0 +1,25 @@
+{
+  "kind": "singleType",
+  "collectionName": "donnees",
+  "info": {
+    "name": "Données",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "ContactEmail": {
+      "type": "email"
+    },
+    "Adresse": {
+      "type": "text"
+    },
+    "Numero": {
+      "type": "string"
+    }
+  }
+}

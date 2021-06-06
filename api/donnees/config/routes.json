@@ -1,0 +1,28 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/donnees",
+      "handler": "donnees.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/donnees",
+      "handler": "donnees.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/donnees",
+      "handler": "donnees.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}
