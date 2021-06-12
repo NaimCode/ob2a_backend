@@ -28,7 +28,8 @@
       "pluginOptions": {}
     },
     "slug": {
-      "type": "uid"
+      "type": "uid",
+      "targetField": "titre"
     },
     "produits": {
       "via": "collections",
