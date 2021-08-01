@@ -59,10 +59,6 @@
       "plugin": "users-permissions",
       "configurable": false
     },
-    "produitsAjoutes": {
-      "via": "vendeur",
-      "collection": "produit"
-    },
     "panier": {
       "collection": "produit"
     },

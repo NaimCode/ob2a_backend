@@ -13,10 +13,8 @@
   "pluginOptions": {},
   "attributes": {
     "titre": {
-      "type": "string"
-    },
-    "contenu": {
-      "type": "richtext"
+      "type": "string",
+      "required": true
     },
     "description": {
       "type": "text"
@@ -25,10 +23,13 @@
       "type": "string"
     },
     "prix": {
-      "type": "decimal"
+      "type": "decimal",
+      "required": true
     },
     "stock": {
-      "type": "integer"
+      "type": "integer",
+      "required": true,
+      "default": 0
     },
     "note": {
       "type": "decimal"
@@ -42,12 +43,10 @@
       "collection": "file",
       "via": "related",
       "allowedTypes": [
-        "images",
-        "files",
-        "videos"
+        "images"
       ],
       "plugin": "upload",
-      "required": false,
+      "required": true,
       "pluginOptions": {}
     },
     "slug": {
@@ -58,23 +57,13 @@
       "via": "produits",
       "collection": "categorie"
     },
-    "vendeur": {
-      "via": "produitsAjoutes",
-      "plugin": "users-permissions",
-      "model": "user"
-    },
-    "commandes": {
-      "via": "produit",
-      "collection": "commande"
-    },
     "enPromotion": {
-      "type": "boolean"
+      "type": "boolean",
+      "default": false
     },
     "prixPromotion": {
-      "type": "decimal"
-    },
-    "prixLivraison": {
-      "type": "decimal"
+      "type": "decimal",
+      "default": 0
     },
     "tag": {
       "type": "component",
@@ -98,6 +87,15 @@
         "Jaune",
         "Rose"
       ]
+    },
+    "poids": {
+      "type": "string"
+    },
+    "Expedition": {
+      "type": "component",
+      "repeatable": false,
+      "component": "produit.expedition",
+      "required": true
     }
   }
 }

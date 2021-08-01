@@ -1,0 +1,19 @@
+{
+  "collectionName": "components_produit_expeditions",
+  "info": {
+    "name": "Expedition",
+    "icon": "ship"
+  },
+  "options": {},
+  "attributes": {
+    "economique": {
+      "type": "decimal"
+    },
+    "moyen": {
+      "type": "decimal"
+    },
+    "busness": {
+      "type": "decimal"
+    }
+  }
+}

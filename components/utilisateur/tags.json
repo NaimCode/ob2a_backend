@@ -1,0 +1,13 @@
+{
+  "collectionName": "components_utilisateur_tags",
+  "info": {
+    "name": "tags",
+    "icon": "hashtag"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    }
+  }
+}

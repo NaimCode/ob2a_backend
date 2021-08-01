@@ -17,10 +17,6 @@
       "plugin": "users-permissions",
       "model": "user"
     },
-    "produit": {
-      "via": "commandes",
-      "model": "produit"
-    },
     "etat": {
       "type": "enumeration",
       "enum": [
