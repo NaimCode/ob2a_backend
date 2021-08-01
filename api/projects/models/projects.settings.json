@@ -2,7 +2,8 @@
   "kind": "collectionType",
   "collectionName": "projects",
   "info": {
-    "name": "projects"
+    "name": "projects",
+    "description": ""
   },
   "options": {
     "increments": true,
@@ -68,6 +69,9 @@
     },
     "description": {
       "type": "text"
+    },
+    "source": {
+      "type": "string"
     }
   }
 }
