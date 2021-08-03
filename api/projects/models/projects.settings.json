@@ -24,7 +24,7 @@
       ]
     },
     "webImage": {
-      "collection": "file",
+      "model": "file",
       "via": "related",
       "allowedTypes": [
         "images",
@@ -36,7 +36,7 @@
       "pluginOptions": {}
     },
     "mobileImage": {
-      "collection": "file",
+      "model": "file",
       "via": "related",
       "allowedTypes": [
         "images",
@@ -55,7 +55,7 @@
     "link": {
       "type": "string"
     },
-    "Image": {
+    "logo": {
       "model": "file",
       "via": "related",
       "allowedTypes": [
