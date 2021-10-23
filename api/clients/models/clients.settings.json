@@ -24,14 +24,18 @@
     "provider": {
       "type": "string"
     },
-    "panier": {
-      "type": "component",
-      "repeatable": true,
-      "component": "produit.tag"
-    },
     "commandes": {
       "via": "clients",
       "collection": "commande"
+    },
+    "panier": {
+      "collection": "produit"
+    },
+    "numero": {
+      "type": "biginteger"
+    },
+    "adresse": {
+      "type": "text"
     }
   }
 }
