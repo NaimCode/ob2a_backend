@@ -10,13 +10,6 @@
     "timestamps": true
   },
   "attributes": {
-    "username": {
-      "type": "string",
-      "minLength": 3,
-      "unique": false,
-      "configurable": true,
-      "required": true
-    },
     "email": {
       "type": "email",
       "minLength": 6,
@@ -59,6 +52,12 @@
       "plugin": "users-permissions",
       "configurable": false
     },
+    "username": {
+      "type": "string",
+      "minLength": 3,
+      "unique": false,
+      "required": true
+    },
     "panier": {
       "collection": "produit"
     },
@@ -68,19 +67,6 @@
     },
     "numero": {
       "type": "biginteger"
-    },
-    "adresse": {
-      "type": "component",
-      "repeatable": true,
-      "component": "utilisateur.adresse"
-    },
-    "monnaie": {
-      "type": "enumeration",
-      "enum": [
-        "Euro",
-        "Dollar",
-        "FCFA"
-      ]
     }
   }
 }
