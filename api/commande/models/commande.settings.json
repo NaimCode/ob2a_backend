@@ -18,8 +18,8 @@
       "dominant": true
     },
     "clients": {
-      "collection": "clients",
       "via": "commandes",
+      "collection": "clients",
       "dominant": true
     },
     "paiement": {
