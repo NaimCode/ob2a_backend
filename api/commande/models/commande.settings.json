@@ -12,25 +12,28 @@
   },
   "pluginOptions": {},
   "attributes": {
-    "acheteur": {
+    "produits": {
+      "collection": "produit",
       "via": "commandes",
-      "plugin": "users-permissions",
-      "model": "user"
+      "dominant": true
+    },
+    "clients": {
+      "collection": "clients",
+      "via": "commandes",
+      "dominant": true
+    },
+    "paiement": {
+      "type": "decimal"
+    },
+    "adresse": {
+      "type": "text"
     },
     "etat": {
       "type": "enumeration",
       "enum": [
-        "commande",
-        "traitement",
-        "envoye",
-        "recu"
-      ]
-    },
-    "paiement": {
-      "type": "enumeration",
-      "enum": [
-        "Paye",
-        "NonPaye"
+        "Traitement",
+        "Envoi",
+        "Livraison"
       ]
     }
   }

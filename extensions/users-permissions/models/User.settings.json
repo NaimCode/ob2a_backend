@@ -61,10 +61,6 @@
     "panier": {
       "collection": "produit"
     },
-    "commandes": {
-      "via": "acheteur",
-      "collection": "commande"
-    },
     "numero": {
       "type": "biginteger"
     }

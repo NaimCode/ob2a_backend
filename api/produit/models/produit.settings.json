@@ -96,6 +96,10 @@
       "repeatable": false,
       "component": "produit.expedition",
       "required": true
+    },
+    "commandes": {
+      "via": "produits",
+      "collection": "commande"
     }
   }
 }
