@@ -24,10 +24,6 @@
     "provider": {
       "type": "string"
     },
-    "commandes": {
-      "via": "clients",
-      "collection": "commande"
-    },
     "panier": {
       "collection": "produit"
     },
@@ -36,6 +32,10 @@
     },
     "adresse": {
       "type": "text"
+    },
+    "commandes": {
+      "via": "client",
+      "collection": "commande"
     }
   }
 }

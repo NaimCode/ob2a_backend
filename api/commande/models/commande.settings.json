@@ -17,12 +17,11 @@
       "via": "commandes",
       "dominant": true
     },
-    "clients": {
-      "via": "commandes",
-      "collection": "clients",
-      "dominant": true
+    "client": {
+      "model": "clients",
+      "via": "commandes"
     },
-    "paiement": {
+    "montant": {
       "type": "decimal"
     },
     "adresse": {
