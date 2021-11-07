@@ -12,20 +12,8 @@
   },
   "pluginOptions": {},
   "attributes": {
-    "produits": {
-      "collection": "produit",
-      "via": "commandes",
-      "dominant": true
-    },
-    "client": {
-      "model": "clients",
-      "via": "commandes"
-    },
     "montant": {
       "type": "decimal"
-    },
-    "adresse": {
-      "type": "text"
     },
     "etat": {
       "type": "enumeration",
@@ -34,6 +22,19 @@
         "Envoi",
         "Livraison"
       ]
+    },
+    "produitsCommandes": {
+      "type": "component",
+      "repeatable": true,
+      "component": "produit.produits-commandes"
+    },
+    "client": {
+      "model": "clients"
+    },
+    "adresseLivraison": {
+      "type": "component",
+      "repeatable": false,
+      "component": "produit.adresse-livraison"
     }
   }
 }

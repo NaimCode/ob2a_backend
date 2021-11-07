@@ -32,10 +32,6 @@
     },
     "adresse": {
       "type": "text"
-    },
-    "commandes": {
-      "via": "client",
-      "collection": "commande"
     }
   }
 }
