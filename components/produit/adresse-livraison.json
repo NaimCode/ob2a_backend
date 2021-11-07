@@ -10,7 +10,7 @@
     "pays": {
       "type": "string",
       "default": "France",
-      "required": true
+      "required": false
     },
     "ville": {
       "type": "string"

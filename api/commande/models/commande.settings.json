@@ -24,7 +24,7 @@
         "Livraison"
       ],
       "default": "Traitement",
-      "required": true
+      "required": false
     },
     "produitsCommandes": {
       "type": "component",
