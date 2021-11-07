@@ -13,7 +13,8 @@
   "pluginOptions": {},
   "attributes": {
     "montant": {
-      "type": "decimal"
+      "type": "decimal",
+      "required": true
     },
     "etat": {
       "type": "enumeration",
@@ -21,20 +22,32 @@
         "Traitement",
         "Envoi",
         "Livraison"
-      ]
+      ],
+      "default": "Traitement",
+      "required": true
     },
     "produitsCommandes": {
       "type": "component",
       "repeatable": true,
       "component": "produit.produits-commandes"
     },
-    "client": {
-      "model": "clients"
-    },
     "adresseLivraison": {
       "type": "component",
       "repeatable": false,
       "component": "produit.adresse-livraison"
+    },
+    "clientID": {
+      "type": "string",
+      "required": true
+    },
+    "clientNom": {
+      "type": "string",
+      "required": true
+    },
+    "stripeID": {
+      "type": "string",
+      "private": true,
+      "required": true
     }
   }
 }

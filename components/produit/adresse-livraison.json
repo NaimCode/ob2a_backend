@@ -2,12 +2,15 @@
   "collectionName": "components_produit_adresse_livraisons",
   "info": {
     "name": "adresseLivraison",
-    "icon": "ambulance"
+    "icon": "ambulance",
+    "description": ""
   },
   "options": {},
   "attributes": {
     "pays": {
-      "type": "string"
+      "type": "string",
+      "default": "France",
+      "required": true
     },
     "ville": {
       "type": "string"
@@ -18,7 +21,7 @@
     "adresse": {
       "type": "text"
     },
-    "numero": {
+    "tel": {
       "type": "biginteger"
     }
   }

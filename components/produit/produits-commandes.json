@@ -2,11 +2,12 @@
   "collectionName": "components_produit_produits_commandes",
   "info": {
     "name": "produitsCommandes",
-    "icon": "archive"
+    "icon": "archive",
+    "description": ""
   },
   "options": {},
   "attributes": {
-    "quantity": {
+    "quantite": {
       "type": "integer"
     },
     "produit": {
